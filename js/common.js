@@ -67,7 +67,7 @@ $(function () {
 
 	/* design 슬라이드 */
 	let swiper1 = new Swiper(".d_bottom .slidewrap", {
-		effect: "coverflow",
+		effect: "slide",
 		/* initialSlide: 2, */
 		grabCursor: true,
 		centeredSlides: true,
