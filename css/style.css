@@ -319,161 +319,70 @@ h2 {
     font-weight: 400;
     color: #6A6A6A;
     margin-bottom: 14px;
-
+    transition: transform 0.3s; /* add transition effect */
 }
 
+.about .ab_right .txt p:hover {
+    transform: scale(1.2); /* scale up by 10% on hover */
+}
 
 /* project */
 .project {
+    box-sizing: border-box;
     padding-top: 120px;
-    position: relative;
 }
 
 .project .container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     padding-top: 70px;
-    position: relative;
-
 }
 
-.project .container .con {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+/* ab_left */
+.project .ab_left {
+    width: 553px;
+ 
 }
 
-/* pb_left */
-.project .container h2 {
-    margin-bottom: 60px;
+.project .ab_left h2 {
+
+    margin-bottom: 120px;
     position: relative;
 }
-
-.project .container .pb_slide .pb_left {
-    /*  width: 680px;
-    height: 387px; */
-    width: 750px;
-    height: 450px;
-    border: 1px solid #eee;
-}
-
-.project .container .pb_slide .pb_left .imgbox {
+.project .ab_left img {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    margin-top: -100px;
+    transition: transform 0.3s; 
 }
 
-.project .container .pb_slide .pb_left .imgbox img {
-    width: 100%;
+.project .ab_left img:hover {
+    transform: scale(1.2);  
 }
+ 
 
-.project .container .pb_slide .pb_left:hover img {
-    animation: project 25s linear forwards;
-}
+/* ab_right */
 
-@keyframes project {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(-4100px);
-    }
-}
-
-/* pb_right */
-.project .container .pb_slide .pb_right {
-    width: 516px;
-    height: 450px;
+.project .ab_right {
+    width: 553px;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    right: 0;
-    top: 0;
+    justify-content: space-around;
+
+}
+.project .ab_right img {
+    width: 100%;
+    margin-top: 68px;
+    transition: transform 0.3s; 
 }
 
-.project .container .pb_slide .pb_right .txt h3 {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 37px;
-    color: #333;
+.project .ab_right img:hover {
+    transform: scale(1.2);  
 }
+ 
+ 
 
-.project .container .pb_slide h3.gowun {
-    font: 37px/1 'Gowun Batang', serif;
-}
-
-.project .container .pb_slide h3.ygfont {
-    font: 37px/1 'Titillium Web', sans-serif;
-}
-
-.project .container .pb_slide .pb_right .txt h3 em {
-    font-style: normal;
-    font-size: 20px;
-    color: #333;
-    font-weight: 200;
-}
-
-.project .container .pb_slide .pb_right .txt p {
-    font-size: 19px;
-    color: #111;
-    font-weight: 400;
-}
-
-.project .container .pb_slide .pb_right .txt span {
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #111;
-    font-weight: 200;
-}
-
-.project .container .pb_right .btn ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.project .container .pb_right .btn ul li {
-    width: 150px;
-    height: 46px;
-    line-height: 44px;
-    text-align: center;
-    border-radius: 23px;
-    border: 1px solid #999;
-}
-
-.project .container .pb_right .btn ul li:hover {
-    color: #fff;
-    background: #333;
-}
-
-.project .container .pb_right .btn ul li a {
-    display: block;
-    font-size: 18px;
-    color: #333;
-    font-weight: 200;
-}
-
-.project .container .pb_right .btn ul li:hover a {
-    color: #fff;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    font-size: 40px;
-    color: #555;
-    opacity: 0.7;
-    position: fixed;
-}
-
-.swiper-button-prev:after {
-    left: 50px;
-}
-
-.swiper-button-next:after {
-    right: 50px;
-}
-
+ 
 /* design */
 .design {
     margin-top: 120px;
@@ -526,7 +435,8 @@ h2 {
 /* d_bottom */
 .design .container .d_bottom {
     position: relative;
-    height: 40vh;
+  width: 100%;
+  margin-top: -80px;
 
 }
 
@@ -538,28 +448,21 @@ h2 {
     display: block;
 }
 
-.design .container .d_bottom .slidewrap {}
-
-.design .container .d_bottom .slidewrap ul {
+  .design .container .d_bottom .slidewrap ul {
     display: flex;
     justify-content: space-between;
-}
-
+}  
+ 
 .design .container .d_bottom .slidewrap ul li {
-    width: 400px;
-    height: 400px;
-}
-
-.design .container .d_bottom .slidewrap ul li a {
-    display: block;
     width: 100%;
-    height: 100%;
-}
+ 
+} 
 
-.design .container .d_bottom .slidewrap ul li a img {
-    width: 100%;
-    height: 100%;
-}
+
+.design .container .d_bottom .slidewrap ul li img {
+    width: 100%
+ 
+}  
 
 .swiper-pagination-bullet {
     width: 10px;
@@ -577,31 +480,11 @@ h2 {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: 0;
+    bottom: 30;
 }
 
-.design .container .d_bottom .banner_design {
-    /* display: none; */
-}
-
-.design .container .d_bottom .banner_design ul.bd_con {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
-}
-
-.design .container .d_bottom .banner_design ul.bd_con li {
-    width: 45%;
-    cursor: pointer;
-}
-
-.design .container .d_bottom .banner_design ul.bd_con li img {
-    width: 100%;
-}
-
+ 
+ 
 /* footer */
 footer {
     padding-top: 120px;
@@ -618,7 +501,6 @@ footer .container {
     justify-content: space-around;
 }
 
-footer .container .ft_tit {}
 
 footer .container .ft_tit h2 {
     position: relative;
@@ -632,8 +514,7 @@ footer .container .ft_middle {
     justify-content: center;
 }
 
-footer .container .ft_middle .ftm_left {}
-
+ 
 footer .container .ft_middle .ftm_left .kakao {
     width: 360px;
     height: 340px;
@@ -648,9 +529,7 @@ footer .container .ft_middle .ftm_left .kakao {
 footer .container .ft_middle .ftm_left .kakao:hover {
     background-color: gold;
 }
-
-footer .container .ft_middle .ftm_left .kakao img {}
-
+ 
 footer .container .ft_middle .ftm_left .kakao p {
     padding-top: 10px;
     font-size: 26px;
@@ -659,8 +538,7 @@ footer .container .ft_middle .ftm_left .kakao p {
     align-self: center;
 }
 
-footer .container .ft_middle .ftm_right {}
-
+ 
 footer .container .ft_middle .ftm_right span {
     display: block;
     font-size: 30px;
