@@ -338,7 +338,7 @@ h2 {
     height: 100%;
     box-sizing: border-box;
     padding-top: 120px;
-    padding-bottom: 500px;
+    margin-bottom: 500px;
 }
 
 .project .container {
@@ -397,7 +397,8 @@ h2 {
     height: 100%;
     padding-top: 120px;
     position: relative;
-    padding-bottom: 500px;
+ 
+    margin-bottom: 500px;
 }
 
 .design .container {
