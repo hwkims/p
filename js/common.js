@@ -4,7 +4,7 @@ $(function () {
 	var swiper2 = new Swiper(".fullpage", {
 		direction: "vertical",
 		slidesPerView: 1,
- 		spaceBetween: 60, 
+ 		spaceBetween: 200, 
 		mousewheel: true,
 		pagination: {
 			el: ".swiper-pagination",
