@@ -6,10 +6,13 @@ $(function () {
 		slidesPerView: 1,
  		spaceBetween: 200, 
 		mousewheel: true,
+		loop: true,
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
 		},
+
+		
 		hashNavigation: {
 			watchState: true,
 		},
@@ -41,6 +44,12 @@ $(function () {
 			el: ".slidewrap .swiper-pagination",
 			clickable: true, // Add this line
 		  },
+		  		  // Navigation arrows
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					  },
+					  loop: true,
 	});
 
  
