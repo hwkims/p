@@ -167,8 +167,13 @@
                             </div>
                         </div><!-- //ftm_left -->
                         <div class="ftm_right">
-                            <span>hwkims@naver.com</span>
+                            <div class="sendmail"><a href="file/portfolio.pdf">portfolio.PDF</a></div>
+                            <div class="sendmail"><a href="file/입사지원서_웹_김현우.pdf">resume.PDF</a></div>
+                            
                             <div class="sendmail"><a href="mailto:hwkims@naver.com">Send email</a></div>
+                            <span onclick="copyText(this)">hwkims@naver.com</span>
+
+<script> function copyText(span) { var text = span.textContent; var textarea = document.createElement('textarea'); textarea.value = text; document.body.appendChild(textarea); textarea.select(); document.execCommand("copy"); document.body.removeChild(textarea); alert('Email address copied!'); } </script>
                         </div><!-- //ftm_right -->
                     </div><!-- //ft_middle -->
                 </div><!-- //container -->
