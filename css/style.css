@@ -557,7 +557,8 @@ footer .container .ft_middle .ftm_right span {
     font-weight: 500;
     color: #444;
     position: relative;
-    padding-top: 100px;
+    padding-top: 30px;
+    z-index: 999;
      
 }
 
@@ -569,7 +570,7 @@ footer .container .ft_middle .ftm_right .sendmail {
     line-height: 50px;
     text-align: center;
     border: none;
-    box-shadow: 0 2px 0 #aaa, 2px 4px 6px #aaa;
+    box-shadow: 0 2px 0 #aaa, 2px 4px 6px #aaa;    z-index: 999;
 }
 
 footer .container .ft_middle .ftm_right .sendmail a {
